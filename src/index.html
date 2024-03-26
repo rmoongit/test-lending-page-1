@@ -36,10 +36,15 @@
           </div>
 
           <div class="intro__text">
-            <h2>At vero eos et accusamus et iusto odio dignissimos ducimus!</h2>
-            <p>- Totam rem aperiam eaque ipsa</p>
-            <p>- Sit voluptatem accusantium doloremque laudantium</p>
-            <p>- Sed ut perspiciatis, unde omnis iste natus error</p>
+            <h2>
+              At&nbsp;vero eos et&nbsp;accusamus et&nbsp;iusto odio dignissimos
+              ducimus!
+            </h2>
+            <p>&mdash;&nbsp;Totam rem aperiam eaque ipsa</p>
+            <p>&mdash;&nbsp;Sit voluptatem accusantium doloremque laudantium</p>
+            <p>
+              &mdash;&nbsp;Sed ut&nbsp;perspiciatis, unde omnis iste natus error
+            </p>
           </div>
 
           <div class="intro__buttons">
@@ -48,6 +53,167 @@
           </div>
         </div>
       </section>
+
+      <section class="form">
+        <div class="container">
+          <div class="form__info">
+            <h2>Оформление <span>Заказа</span></h2>
+            <p>
+              Перед заполнением формы ознакомьтесь с&nbsp;нашей схемой работы!
+            </p>
+            <ul class="form__info-list">
+              <li>
+                <div>
+                  <img
+                    src="./icons/search.svg"
+                    width="34"
+                    height="34"
+                    alt="Поиск"
+                  />
+                </div>
+                <p>Lorem ipsum dolor sit amet</p>
+              </li>
+              <li>
+                <div>
+                  <img
+                    src="./icons/percent.svg"
+                    width="31"
+                    height="31"
+                    alt="Процент скидки"
+                  />
+                </div>
+                <p>Сonsecteturadipiscing elit</p>
+              </li>
+              <li>
+                <div>
+                  <img
+                    src="./icons/document.svg"
+                    width="38"
+                    height="41"
+                    alt="Документ"
+                  />
+                </div>
+                <p>Sed do eiusmod tempor</p>
+              </li>
+              <li>
+                <div>
+                  <img
+                    src="./icons/post.svg"
+                    width="26"
+                    height="29"
+                    alt="Почта"
+                  />
+                </div>
+                <p>Esse cillum dolore eu fugiat</p>
+              </li>
+              <li>
+                <div>
+                  <img
+                    src="./icons/cash.svg"
+                    width="39"
+                    height="26"
+                    alt="Оплата"
+                  />
+                </div>
+                <p>Excepteur sint occaecat cupidatat non proident</p>
+              </li>
+            </ul>
+          </div>
+          <form action="/" method="post">
+            <div class="form__info-user">
+              <div class="select">
+                <button class="form__info-user-button" type="button">
+                  Выберите тип системы
+                </button>
+                <input type="hidden" data-text="Выберите тип системы" />
+
+                <ul class="select__list">
+                  <li class="select__list-item">
+                    <button type="button">Sed ut perspiciatis</button>
+                  </li>
+                  <li class="select__list-item">
+                    <button type="button">Nemo enim ipsam</button>
+                  </li>
+                  <li class="select__list-item">
+                    <button type="button">Et harum quidem</button>
+                  </li>
+                  <li class="select__list-item">
+                    <button type="button">Temporibus autem</button>
+                  </li>
+                  <li class="select__list-item">
+                    <button type="button">Itaque earum rerum</button>
+                  </li>
+                  <li class="select__list-item">
+                    <button type="button">test</button>
+                  </li>
+                  <li class="select__list-item">
+                    <button type="button">test</button>
+                  </li>
+                  <li class="select__list-item">
+                    <button type="button">test</button>
+                  </li>
+                </ul>
+
+                <img
+                  class="select__img"
+                  src="./icons/tick.svg"
+                  width="9"
+                  height="6"
+                  alt="Галочка"
+                />
+              </div>
+
+              <input
+                type="email"
+                placeholder="Ваш e-mail"
+                pattern=".+@mail\.ru"
+                required
+              />
+              <input type="text" placeholder="Ваше имя" required />
+            </div>
+            <div class="form__filter-user">
+              <div class="form__filter-user-slide">
+                <label for="display">
+                  Sed ut perspiciatis, unde omnis iste natus
+                  <input
+                    type="text"
+                    id="display"
+                    value="0"
+                    maxlength="3"
+                    required
+                  />
+                  <span>%</span>
+                </label>
+                <div class="form__filter-user-slider">
+                  <input
+                    type="range"
+                    min="1"
+                    max="100"
+                    value="75"
+                    id="myRange"
+                  />
+                </div>
+              </div>
+
+              <div class="form__filter-user-file">
+                <label for="files"
+                  >Прикрепить файл
+                  <input type="file" id="files" />
+                  <img
+                    src="/src/icons/file.svg"
+                    width="18"
+                    height="20"
+                    alt="Файл"
+                  />
+                </label>
+              </div>
+            </div>
+
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
     </main>
+    <script src="/src/js/main.js" type="module"></script>
   </body>
 </html>
