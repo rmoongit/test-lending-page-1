@@ -36,29 +36,33 @@ const setOption = (e) => {
   closeMenu()
 }
 
-//Клик по основной кнопке
-selectButton.addEventListener('click', () => {
-  openMenu()
-})
-
-//Выбор текста меню
-selectChoices.forEach((button) => {
-  button.addEventListener('click', (e) => {
-    setOption(e)
-  })
-})
-
-//Закрытие вне таргета
-document.addEventListener('click', (e) => {
-  if (e.target.closest('form') && e.target !== selectButton) {
-    if (selectList.classList.contains('open')) {
-      closeMenu()
-    }
-  }
-})
-
 function resetOptions() {
   selectButton.textContent = 'Выберите тип системы'
   input.setAttribute('data-text', '')
   console.log(selectButton, input)
 }
+
+const initSelectMenu = () => {
+  //Клик по основной кнопке
+  selectButton.addEventListener('click', () => {
+    openMenu()
+  })
+
+  //Закрытие вне таргета
+  document.addEventListener('click', (e) => {
+    if (e.target.closest('form') && e.target !== selectButton) {
+      if (selectList.classList.contains('open')) {
+        closeMenu()
+      }
+    }
+  })
+
+  //Выбор текста меню
+  selectChoices.forEach((button) => {
+    button.addEventListener('click', (e) => {
+      setOption(e)
+    })
+  })
+}
+
+export { initSelectMenu }

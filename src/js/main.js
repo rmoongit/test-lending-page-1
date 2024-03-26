@@ -1,3 +1,8 @@
 // main
-import './custom-select.js'
-import './file.js'
+import { initSelectMenu } from './custom-select.js'
+import { initRange } from './range.js'
+
+document.addEventListener('DOMContentLoaded', () => {
+  initRange()
+  initSelectMenu()
+})
